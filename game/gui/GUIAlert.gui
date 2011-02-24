@@ -1,0 +1,83 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(GUIAlert) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "800 600";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiBitmapButtonCtrl() {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "278 148";
+      Extent = "267 176";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+
+      new GuiBitmapButtonCtrl(GUIAlertNo) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "ExampleTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "25 126";
+         Extent = "99 33";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         tooltipprofile = "ExampleTextProfile";
+         hovertime = "1000";
+         text = "           no";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiTextCtrl(GUIAlertText) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "GuiTextProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "23 14";
+         Extent = "216 72";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         maxLength = "1024";
+      };
+      new GuiBitmapButtonCtrl(guiAlertYes) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "ExampleTextProfile";
+         HorizSizing = "center";
+         VertSizing = "bottom";
+         Position = "149 126";
+         Extent = "97 31";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         tooltipprofile = "ExampleButtonProfile";
+         hovertime = "1000";
+         text = "          yes";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+   };
+};
+//--- OBJECT WRITE END ---

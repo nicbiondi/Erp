@@ -1,0 +1,36 @@
+<TorsionProjectOptions>
+<Address>127.0.0.1</Address>
+<Password>password</Password>
+<Port>6060</Port>
+<LastConfig>Release</LastConfig>
+<Breakpoints>
+<Breakpoint>
+<File>game\gameScripts\game.cs</File>
+<Line>154</Line>
+<Pass>0</Pass>
+<Condition/>
+<Enabled/>
+</Breakpoint>
+<Breakpoint>
+<File>game\gameScripts\datablocks.cs</File>
+<Line>16</Line>
+<Pass>0</Pass>
+<Condition/>
+<Enabled/>
+</Breakpoint>
+</Breakpoints>
+<Bookmarks/>
+<OpenFiles>
+<File ScrollX="0" ScrollY="101">game\gameScripts\game.cs</File>
+<File ScrollX="0" ScrollY="0">game\gameScripts\UI.cs</File>
+<File ScrollX="0" ScrollY="9">game\gameScripts\levelSelection.cs</File>
+<File ScrollX="0" ScrollY="0" Active="true">game\main.cs</File>
+<File ScrollX="0" ScrollY="36">game\behaviors\mouseDraggable.cs</File>
+<File ScrollX="0" ScrollY="0">game\gameScripts\effects.cs</File>
+<File ScrollX="0" ScrollY="7">game\gameScripts\datablocks.cs</File>
+<File ScrollX="0" ScrollY="0">game\data\levels\splash.t2d</File>
+<File ScrollX="0" ScrollY="0">game\data\levels\login.t2d</File>
+<File ScrollX="0" ScrollY="0">game\data\levels\levelSelection.t2d</File>
+<File ScrollX="0" ScrollY="3725">game\data\levels\asteroid.t2d</File>
+</OpenFiles>
+</TorsionProjectOptions>

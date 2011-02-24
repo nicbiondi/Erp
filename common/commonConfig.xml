@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<TorqueGameConfiguration>
+   <Company>poo games</Company>
+   <GameName>cracklepop_alpha_0.35</GameName>
+   <Resolution>800 600 32</Resolution>
+   <FullScreen>false</FullScreen>
+   <CommonVer>114</CommonVer>
+   <ConsoleKey>tilde</ConsoleKey>
+   <ScreenShotKey>ctrl p</ScreenShotKey>
+   <FullscreenKey>alt enter</FullscreenKey>
+   <UsesNetwork>1</UsesNetwork>
+   <UsesAudio>1</UsesAudio>
+   <DefaultScene>~/data/levels/asteroid.t2d</DefaultScene>
+</TorqueGameConfiguration>

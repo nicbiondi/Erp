@@ -1,0 +1,765 @@
+%levelContent = new t2dSceneGraph() {
+   canSaveDynamicFields = "1";
+   UseLayerSorting = "1";
+   layerSortMode0 = "Normal";
+   layerSortMode1 = "Normal";
+   layerSortMode2 = "Normal";
+   layerSortMode3 = "Normal";
+   layerSortMode4 = "Normal";
+   layerSortMode5 = "Normal";
+   layerSortMode6 = "Normal";
+   layerSortMode7 = "Normal";
+   layerSortMode8 = "Normal";
+   layerSortMode9 = "Normal";
+   layerSortMode10 = "Normal";
+   layerSortMode11 = "Normal";
+   layerSortMode12 = "Normal";
+   layerSortMode13 = "Normal";
+   layerSortMode14 = "Normal";
+   layerSortMode15 = "Normal";
+   layerSortMode16 = "Normal";
+   layerSortMode17 = "Normal";
+   layerSortMode18 = "Normal";
+   layerSortMode19 = "Normal";
+   layerSortMode20 = "Normal";
+   layerSortMode21 = "Normal";
+   layerSortMode22 = "Normal";
+   layerSortMode23 = "Normal";
+   layerSortMode24 = "Normal";
+   layerSortMode25 = "Normal";
+   layerSortMode26 = "Normal";
+   layerSortMode27 = "Normal";
+   layerSortMode28 = "Normal";
+   layerSortMode29 = "Normal";
+   layerSortMode30 = "Normal";
+   layerSortMode31 = "Normal";
+   DebugRendering = "0";
+      cameraPosition = "-733.399048 201.120544";
+      cameraSize = "320.000000 200.000000";
+
+   new t2dParticleEffect() {
+      effectFile = "~/data/particles/jumpTrail.eff";
+      useEffectCollisions = "1";
+      effectMode = "INFINITE";
+      effectTime = "0";
+      canSaveDynamicFields = "1";
+      Position = "-468.432 256.423";
+      size = "1.686 1.881";
+      Layer = "3";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+      CollisionMaxIterations = "1";
+         mountID = "3";
+         mountToID = "2";
+   };
+   new t2dStaticSprite() {
+      imageMap = "ComboFlairImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "startLocation";
+      Position = "-468.432 256.423";
+      size = "15.719 15.719";
+      Layer = "2";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+      CollisionCircleScale = "0.7";
+      CollisionDetectionMode = "CIRCLE";
+      CollisionResponseMode = "RIGID";
+      CollisionPolyList = "-0.624 -0.771 -0.422 -0.908 -0.211 -0.977 0.005 -1.000 0.226 -0.967 0.447 -0.889 0.614 -0.771 0.781 -0.609 0.908 -0.432 0.972 -0.216 0.992 0.020 0.962 0.231 0.874 0.427 0.771 0.629 0.604 0.786 0.412 0.899 0.226 0.962 -0.005 0.992 -0.221 0.958 -0.427 0.894 -0.619 0.781 -0.771 0.624 -0.874 0.447 -0.958 0.216 -0.992 0.015 -0.962 -0.221 -0.889 -0.442 -0.776 -0.629";
+      BlendColor = "0 0 0 1";
+      ForceScale = "0";
+      AutoMassInertia = "0";
+      Mass = "0";
+      Inertia = "0";
+      Density = "0";
+      Friction = "0";
+      Restitution = "0.4";
+      MaxLinearVelocity = "0";
+      MaxAngularVelocity = "0";
+      LinkPoints = "0.000 0.000";
+         mountID = "2";
+   };
+   new t2dTrigger() {
+      LeaveCallback = "0";
+      canSaveDynamicFields = "1";
+      class = "obsticle";
+      Position = "1846.891 436.160";
+      size = "5921.451 112.320";
+      FlipY = "1";
+      CollisionActiveSend = "1";
+      CollisionActiveReceive = "1";
+         mountID = "4";
+   };
+   new t2dTrigger() {
+      LeaveCallback = "0";
+      canSaveDynamicFields = "1";
+      class = "obsticle";
+      Position = "2040.034 -1339.362";
+      size = "5585.354 368.724";
+      CollisionActiveSend = "1";
+      CollisionActiveReceive = "1";
+         mountID = "5";
+   };
+   new t2dTrigger() {
+      LeaveCallback = "0";
+      canSaveDynamicFields = "1";
+      class = "obsticle";
+      Position = "-1083.311 -307.500";
+      size = "109.515 1885.000";
+      CollisionActiveSend = "1";
+      CollisionActiveReceive = "1";
+         mountID = "6";
+   };
+   new t2dScroller() {
+      imageMap = "backgroundIsland1ImageMap";
+      canSaveDynamicFields = "1";
+      Position = "64.025 228.308";
+      size = "116.698 34.761";
+      Layer = "28";
+         mountID = "7";
+   };
+   new t2dStaticSprite() {
+      imageMap = "water1ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "568.161 232.043";
+      size = "2649.843 49.409";
+      Layer = "27";
+      BlendColor = "1 1 1 0.243137";
+         mountID = "8";
+   };
+   new t2dParticleEffect() {
+      effectFile = "~/data/particles/collisionDust.eff";
+      useEffectCollisions = "0";
+      effectMode = "KILL";
+      effectTime = "1";
+      canSaveDynamicFields = "1";
+      Position = "-286.771 -67.653";
+      size = "26.199 17.253";
+      CollisionMaxIterations = "1";
+         mountID = "9";
+   };
+   new t2dTrigger() {
+      LeaveCallback = "0";
+      canSaveDynamicFields = "1";
+      class = "obsticle";
+      Position = "4773.309 -337.500";
+      size = "109.515 1885.000";
+      CollisionActiveSend = "1";
+      CollisionActiveReceive = "1";
+         mountID = "10";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "-114.095 295.721";
+      size = "11.809 11.442";
+         mountID = "11";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "-18.441 200.721";
+      size = "13.118 11.442";
+         mountID = "12";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "-64.095 245.721";
+      size = "11.809 11.442";
+         mountID = "13";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "1334.095 34.279";
+      size = "11.809 11.442";
+         mountID = "14";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "1379.095 32.937";
+      size = "11.809 11.442";
+         mountID = "15";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "1419.095 34.279";
+      size = "11.809 11.442";
+         mountID = "16";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "1164.095 -345.721";
+      size = "11.809 11.442";
+         mountID = "17";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "1189.095 -366.757";
+      size = "11.809 11.442";
+         mountID = "18";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "1210.905 -345.721";
+      size = "11.809 11.442";
+         mountID = "19";
+   };
+   new t2dStaticSprite() {
+      imageMap = "energyColumnFlairImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "3553.549 -785.180";
+      size = "47.099 64.973";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+      BlendColor = "1 1 1 0.65098";
+         mountID = "20";
+   };
+   new t2dTileLayer() {
+      LayerFile = "~/data/tilemaps/water.lyr";
+      canSaveDynamicFields = "1";
+      Position = "2452.539 618.763";
+      size = "7581.299 562.475";
+      CollisionMaxIterations = "1";
+      SrcBlendFactor = "ONE";
+         mountID = "21";
+   };
+   new t2dTileLayer() {
+      LayerFile = "~/data/tilemaps/levelIsland3.lyr";
+      canSaveDynamicFields = "1";
+      Position = "9398.829 8850.229";
+      size = "20000.000 20000.000";
+      Layer = "2";
+      CollisionActiveReceive = "1";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+      CollisionMaxIterations = "1";
+      Immovable = "1";
+      AutoMassInertia = "0";
+      Mass = "0";
+      Inertia = "0";
+      Density = "0";
+      Friction = "0";
+      Restitution = "0";
+         mountID = "22";
+   };
+   new t2dTileLayer() {
+      LayerFile = "~/data/tilemaps/bg.lyr";
+      canSaveDynamicFields = "1";
+      Position = "2381.729 132.791";
+      size = "7433.458 2041.996";
+      Layer = "7";
+      CollisionMaxIterations = "1";
+      SrcBlendFactor = "ONE";
+         mountID = "23";
+      _behavior0 = "ParallaxObjectBehavior	xSpeed	0";
+   };
+   new t2dStaticSprite() {
+      imageMap = "bunny_leafsImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "55.648 -92.155";
+      size = "18.703 19.133";
+         mountID = "24";
+   };
+   new t2dStaticSprite() {
+      imageMap = "leaves_01ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "-185.322 330.281";
+      size = "26.059 19.438";
+         mountID = "25";
+   };
+   new t2dStaticSprite() {
+      imageMap = "leaves_01ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "-181.971 326.617";
+      size = "26.059 19.438";
+         mountID = "26";
+   };
+   new t2dStaticSprite() {
+      imageMap = "leaves_01bImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "-198.222 328.499";
+      size = "21.019 23.002";
+         mountID = "27";
+   };
+   new t2dStaticSprite() {
+      imageMap = "flower_01ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "-205.250 324.648";
+      size = "13.948 13.284";
+         mountID = "28";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "199.858 51.869";
+      size = "13.713 13.737";
+         mountID = "29";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "200.514 6.658";
+      size = "13.118 13.316";
+         mountID = "30";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "203.441 -47.500";
+      size = "13.118 15.000";
+         mountID = "31";
+   };
+   new t2dStaticSprite() {
+      imageMap = "skyImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "-417.500 76.684";
+      size = "1215.000 876.632";
+      Layer = "7";
+         mountID = "32";
+      _behavior0 = "ParallaxObjectBehavior	xSpeed	0";
+   };
+   new t2dStaticSprite() {
+      imageMap = "skyImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "-416.365 -687.491";
+      size = "1212.730 655.019";
+      FlipY = "1";
+      Layer = "7";
+         mountID = "33";
+      _behavior0 = "ParallaxObjectBehavior	xSpeed	0";
+   };
+   new t2dStaticSprite() {
+      imageMap = "Tree_01ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "-179.943 270.744";
+      size = "82.279 134.012";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+      CollisionPolyList = "-0.128 0.015 -0.112 0.167 -0.112 0.854 -0.264 0.884 -0.264 0.378";
+         mountID = "34";
+   };
+   new t2dStaticSprite() {
+      imageMap = "tree_03ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "239.656 8.437";
+      size = "112.863 243.126";
+      Layer = "1";
+      CollisionActiveReceive = "1";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+      CollisionPolyList = "-0.243 -0.751 0.116 -0.486 0.085 0.854 -0.423 0.874";
+         mountID = "35";
+   };
+   new t2dStaticSprite() {
+      imageMap = "tree_03ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "239.969 8.437";
+      size = "112.863 243.126";
+      Layer = "1";
+      CollisionActiveReceive = "1";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+      CollisionPolyList = "-0.180 0.604 0.508 0.943 -0.793 0.933";
+         mountID = "36";
+   };
+   new t2dStaticSprite() {
+      imageMap = "bunny_leafsImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "45.648 -90.434";
+      size = "18.703 19.133";
+      Layer = "3";
+         mountID = "37";
+   };
+   new t2dTileLayer() {
+      LayerFile = "~/data/tilemaps/nearBackground.lyr";
+      canSaveDynamicFields = "1";
+      Position = "2447.995 -75.673";
+      size = "6096.506 2148.654";
+      Layer = "3";
+      CollisionMaxIterations = "1";
+      BlendColor = "0.517647 0.517647 0.517647 1";
+         mountID = "38";
+   };
+   new t2dStaticSprite() {
+      imageMap = "leaves_01ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "457.362 67.201";
+      size = "18.778 14.401";
+         mountID = "39";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "878.143 10.320";
+      size = "13.713 13.737";
+         mountID = "40";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "1086.856 -11.868";
+      size = "13.713 13.737";
+         mountID = "41";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "979.287 -4.362";
+      size = "13.713 13.737";
+         mountID = "42";
+   };
+   new t2dStaticSprite() {
+      imageMap = "tree_02bImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "1988.396 -52.162";
+      size = "196.792 381.641";
+      Layer = "1";
+      CollisionActiveReceive = "1";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+      CollisionPolyList = "-0.205 -0.683 0.277 -0.555 0.472 -0.093 0.113 0.756 -0.216 0.751 -0.349 0.123 -0.380 -0.471";
+         mountID = "43";
+   };
+   new t2dTrigger(leafCollisionTrigger) {
+      canSaveDynamicFields = "1";
+      Position = "236.747 -45.811";
+      size = "69.606 88.378";
+      CollisionActiveSend = "1";
+      CollisionActiveReceive = "1";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+         mountID = "44";
+   };
+   new t2dTrigger(leafCollisionTrigger) {
+      canSaveDynamicFields = "1";
+      Position = "1985.000 -88.758";
+      size = "110.000 197.516";
+      CollisionActiveSend = "1";
+      CollisionActiveReceive = "1";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+         mountID = "45";
+   };
+   new t2dTrigger(leafCollisionTrigger) {
+      canSaveDynamicFields = "1";
+      Position = "-178.047 252.311";
+      size = "56.094 50.475";
+      CollisionActiveSend = "1";
+      CollisionActiveReceive = "1";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+         mountID = "46";
+   };
+   new t2dStaticSprite() {
+      imageMap = "tree_05ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "780.485 57.026";
+      size = "93.671 120.000";
+         mountID = "47";
+   };
+   new t2dTrigger(leafCollisionTrigger) {
+      canSaveDynamicFields = "1";
+      Position = "781.992 49.334";
+      size = "63.984 58.667";
+      CollisionActiveSend = "1";
+      CollisionActiveReceive = "1";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+         mountID = "48";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "448.143 51.868";
+      size = "13.713 13.737";
+         mountID = "49";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "490.101 43.132";
+      size = "13.713 13.737";
+         mountID = "50";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "528.143 51.868";
+      size = "13.713 13.737";
+         mountID = "51";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "2596.222 -481.117";
+      size = "12.445 12.234";
+         mountID = "52";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "2707.361 -461.117";
+      size = "12.445 12.234";
+         mountID = "53";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "2803.778 -403.883";
+      size = "12.445 12.234";
+         mountID = "54";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "3346.219 -303.402";
+      size = "12.439 13.195";
+         mountID = "55";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "3343.781 -345.078";
+      size = "12.439 13.195";
+         mountID = "56";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "3338.781 -386.598";
+      size = "12.439 13.195";
+         mountID = "57";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "3636.219 -736.597";
+      size = "12.439 13.195";
+         mountID = "58";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "3641.219 -683.403";
+      size = "12.439 13.195";
+         mountID = "59";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "3617.479 -766.597";
+      size = "12.439 13.195";
+         mountID = "60";
+   };
+   new t2dStaticSprite() {
+      imageMap = "starImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      class = "star";
+      Position = "3629.870 -628.403";
+      size = "12.439 13.195";
+         mountID = "61";
+   };
+   new t2dStaticSprite() {
+      imageMap = "leaves_01ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "2408.852 -393.392";
+      size = "24.786 26.783";
+         mountID = "62";
+   };
+   new t2dStaticSprite() {
+      imageMap = "leaves_01ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "2739.225 -334.746";
+      size = "24.786 26.783";
+         mountID = "63";
+   };
+   new t2dStaticSprite() {
+      imageMap = "leaves_01ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "2972.393 -213.391";
+      size = "24.786 26.783";
+         mountID = "64";
+   };
+   new t2dStaticSprite() {
+      imageMap = "leaves_01ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "3239.558 -470.130";
+      size = "24.786 26.783";
+         mountID = "65";
+   };
+   new t2dStaticSprite() {
+      imageMap = "bunny_leafsImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "3202.939 -436.762";
+      size = "24.123 23.525";
+         mountID = "66";
+   };
+   new t2dStaticSprite() {
+      imageMap = "bunny_leafsImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "2894.721 -213.238";
+      size = "24.123 23.525";
+         mountID = "67";
+   };
+   new t2dStaticSprite() {
+      imageMap = "flower_01ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "2965.069 -219.513";
+      size = "22.813 23.380";
+         mountID = "68";
+   };
+   new t2dStaticSprite() {
+      imageMap = "flower_01ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "2281.406 -418.310";
+      size = "22.813 23.380";
+         mountID = "69";
+   };
+   new t2dStaticSprite() {
+      imageMap = "Tree_01ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "2437.503 -435.429";
+      size = "54.994 103.822";
+         mountID = "70";
+   };
+   new t2dTrigger(leafCollisionTrigger) {
+      canSaveDynamicFields = "1";
+      Position = "2436.637 -449.278";
+      size = "43.274 38.556";
+      CollisionActiveSend = "1";
+      CollisionActiveReceive = "1";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+         mountID = "71";
+   };
+   new t2dStaticSprite() {
+      imageMap = "palm_00ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "3687.394 -798.422";
+      size = "32.155 106.843";
+      Layer = "3";
+         mountID = "72";
+   };
+   new t2dStaticSprite() {
+      imageMap = "tree_05ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "2522.482 -432.586";
+      size = "72.698 97.925";
+         mountID = "73";
+   };
+   new t2dTrigger(leafCollisionTrigger) {
+      canSaveDynamicFields = "1";
+      Position = "2523.276 -440.000";
+      size = "56.553 50.000";
+      CollisionActiveSend = "1";
+      CollisionActiveReceive = "1";
+      CollisionPhysicsSend = "0";
+      CollisionPhysicsReceive = "0";
+         mountID = "74";
+   };
+   new t2dStaticSprite() {
+      imageMap = "leaves_01ImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "2521.443 -392.016";
+      size = "32.886 31.582";
+         mountID = "75";
+   };
+   new t2dStaticSprite() {
+      imageMap = "bunny_leafsImageMap";
+      frame = "0";
+      canSaveDynamicFields = "1";
+      Position = "2514.560 -398.237";
+      size = "24.123 23.525";
+         mountID = "76";
+   };
+};

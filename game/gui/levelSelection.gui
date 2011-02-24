@@ -1,0 +1,85 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(levelSelection) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiButtonCtrl() {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiButtonProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "221 205";
+      Extent = "281 242";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+
+      new GuiScrollCtrl() {
+         canSaveDynamicFields = "0";
+         isContainer = "1";
+         Profile = "GuiScrollProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "5 2";
+         Extent = "273 160";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         willFirstRespond = "1";
+         hScrollBar = "alwaysOn";
+         vScrollBar = "alwaysOn";
+         constantThumbHeight = "0";
+         childMargin = "0 0";
+
+         new GuiListBoxCtrl(levelSelectionList) {
+            canSaveDynamicFields = "0";
+            isContainer = "0";
+            Profile = "GuiListBoxProfile";
+            HorizSizing = "right";
+            VertSizing = "bottom";
+            Position = "2 2";
+            Extent = "250 2";
+            MinExtent = "8 2";
+            canSave = "1";
+            Visible = "1";
+            hovertime = "1000";
+            AllowMultipleSelections = "1";
+            fitParentWidth = "1";
+         };
+      };
+   };
+   new GuiBitmapButtonCtrl(levelSelectionLoadButton) {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "ExampleWindowProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "399 374";
+      Extent = "95 33";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      text = "load level";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+      Command = "levelSelectionDialogSelectionMade();";
+   };
+};
+//--- OBJECT WRITE END ---

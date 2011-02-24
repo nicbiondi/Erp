@@ -1,0 +1,82 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(GUIProgress) {
+   canSaveDynamicFields = "0";
+   isContainer = "1";
+   Profile = "GuiDefaultProfile";
+   HorizSizing = "right";
+   VertSizing = "bottom";
+   Position = "0 0";
+   Extent = "1024 768";
+   MinExtent = "8 2";
+   canSave = "1";
+   Visible = "1";
+   hovertime = "1000";
+
+   new GuiBitmapButtonCtrl() {
+      canSaveDynamicFields = "0";
+      isContainer = "0";
+      Profile = "GuiDefaultProfile";
+      HorizSizing = "right";
+      VertSizing = "bottom";
+      Position = "278 148";
+      Extent = "267 176";
+      MinExtent = "8 2";
+      canSave = "1";
+      Visible = "1";
+      hovertime = "1000";
+      groupNum = "-1";
+      buttonType = "PushButton";
+      useMouseEvents = "0";
+
+      new GuiTextCtrl(GUIProgressText) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "ExampleWindowProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "6 2";
+         Extent = "257 55";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         hovertime = "1000";
+         text = "loading...";
+         maxLength = "1024";
+      };
+      new GuiBitmapButtonCtrl(guiProgressCancel) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "ExampleWindowProfile";
+         HorizSizing = "center";
+         VertSizing = "center";
+         Position = "77 126";
+         Extent = "107 31";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         tooltipprofile = "ExampleTextProfile";
+         hovertime = "1000";
+         text = "cancel ";
+         groupNum = "-1";
+         buttonType = "PushButton";
+         useMouseEvents = "0";
+      };
+      new GuiTextCtrl(GUIPercentText) {
+         canSaveDynamicFields = "0";
+         isContainer = "0";
+         Profile = "ExampleWindowProfile";
+         HorizSizing = "right";
+         VertSizing = "bottom";
+         Position = "73 53";
+         Extent = "115 62";
+         MinExtent = "8 2";
+         canSave = "1";
+         Visible = "1";
+         tooltipprofile = "ExampleWindowProfile";
+         hovertime = "1000";
+         text = "0%";
+         maxLength = "1024";
+      };
+   };
+};
+//--- OBJECT WRITE END ---
